@@ -1,0 +1,14 @@
+{% extends "encyclopedia/layout.html" %}
+
+{% block title %}
+    {{ title | safe }}
+{% endblock %}
+
+{% block body %}
+    {% if noPage%}
+        <h1>{{ noPage | safe }}</h1>
+    {% else %}
+        <div>{{ content | safe }}</div>
+    {% endif %}
+
+{% endblock %}
