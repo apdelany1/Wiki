@@ -1,0 +1,15 @@
+{% extends "encyclopedia/layout.html" %}
+
+{% block title %}
+    {{ title | safe }}
+{% endblock %}
+
+{% block body %}
+    <h1>Edit Wiki Page</h1>
+    <form method="post" action="{% url 'saveEdit' %}">
+        {% csrf_token %}
+        <input style="padding: 5px; border-radius: 10px; border: 2px double rgb(63, 56, 56);" type="text" name="title" value="{{ title }}" readonly><br><br>
+        <textarea style="height: 50vh; width: 60%; border: 2px solid rgb(0, 0, 0);" id="body" name="body" placeholder="Description in Markdown">{{ body }}</textarea><br>
+        <button type="submit">Submit Edit</button>
+    </form>
+{% endblock %}

@@ -1,6 +1,8 @@
 body {
+    background-color: #f9f9fb69;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: #111827;
     margin: 0;
-    background-color: white;
 }
 
 code {
@@ -13,26 +15,80 @@ h1 {
 }
 
 textarea {
-    height: 90vh;
-    width: 80%;
+    height: 20vh;
+    width: 25%;
+    border-radius: 21px;
+    padding: 10px;
 }
 
 .main {
-    padding: 10px;
+    padding: 15px;
 }
 
 .search {
     width: 100%;
     font-size: 15px;
     line-height: 15px;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: rgb(239, 239, 238);
+    font-family: cursive;
 }
 
 .sidebar {
-    background-color: #f0f0f0;
+    background-color: #212c3b;
     height: 100vh;
     padding: 20px;
+    color: rgb(244, 244, 244);
+    letter-spacing: 1px;
+}
+
+#list {
+    color: black;
+    font-size: 30px;
+}
+
+#list a {
+    text-decoration: none;
+    color: black;
+    font-family:'Courier New', Courier, monospace;
+}
+
+#list a:hover {
+    text-decoration: underline;
+    color: red;
+}
+
+li {
+    list-style-type: circle;
+}
+
+.sidebar a {
+    color: white;
+    font-size: 17px;
+}
+
+
+#page {
+    font-size: 1.5em;
+}
+.sidebar a:hover {
+    text-decoration: dotted;
+    text-decoration-color: rgb(189, 28, 28);
+    color: rgb(224, 208, 26);
 }
 
 .sidebar h2 {
     margin-top: 5px;
+}
+
+button {
+    padding: 10px;
+    color: white;
+    border-color: black;
+    border: 5px;
+    background-color: blue;
+    border-radius: 10px;
+    font-family: cursive;
 }

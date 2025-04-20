@@ -9,8 +9,7 @@
 
     <ul>
         {% for entry in entries %}
-            <li><a href="{{ entry }}">{{ entry }}</a></li>
+            <li id="list"><a href="{% url 'entry' entry %}">{{ entry | safe }}</a></li>
         {% endfor %}
     </ul>
-
 {% endblock %}
